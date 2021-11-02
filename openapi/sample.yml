@@ -1,0 +1,18 @@
+openapi: '3.0.2'
+info:
+  title: Swagger GithubPage Sample
+  version: '1.0'
+servers:
+  - url: 'https://api.server.prod/v1'
+    description: production
+  - url: 'https://api.server.test/v1'
+    description: qa
+  - url: 'https://api.server.stg/v1'
+    description: staging
+
+paths:
+  /test:
+    get:
+      responses:
+        '200':
+          description: OK
